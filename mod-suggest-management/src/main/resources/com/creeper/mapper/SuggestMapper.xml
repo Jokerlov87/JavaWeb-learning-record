@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.creeper.mapper.SuggestMapper">
+
+<!--&lt;!&ndash;    条件查询&ndash;&gt;-->
+<!--    <select id="list" resultType="com.creeper.pojo.Suggest">-->
+<!--        select *-->
+<!--        from table_suggest-->
+<!--        <where>-->
+<!--            <if test="suggestid != null">-->
+<!--                suggestid = #{}-->
+<!--            </if>-->
+<!--            <if test="username != null and username !=''">-->
+<!--                and username like concat('%',#{username},'%')-->
+<!--            </if>-->
+<!--            <if test="modid != null and modid !=''">-->
+<!--                and modid like concat('%',#{modid},'%')-->
+<!--            </if>-->
+<!--            <if test="suggest != null and suggest !=''">-->
+<!--                and suggest like concat('%',#{suggest},'%')-->
+<!--            </if>-->
+<!--        </where>-->
+
+<!--    </select>-->
+
+
+<!--    &lt;!&ndash;    更新suggest&ndash;&gt;-->
+<!--    <update id="update">-->
+<!--        UPDATE table_suggest-->
+<!--        <set>-->
+<!--            <if test="username!=null">-->
+<!--                username=#{username},-->
+<!--            </if>-->
+<!--            <if test="modid!=null">-->
+<!--                modid=#{modid},-->
+<!--            </if>-->
+<!--            <if test="suggest!=null">-->
+<!--                suggest=#{suggest}-->
+<!--            </if>-->
+<!--        </set>-->
+<!--        WHERE suggestid = #{suggestid}-->
+<!--    </update>-->
+
+</mapper>
